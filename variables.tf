@@ -1,10 +1,10 @@
 variable "name" {
-  type = string
+  type        = string
   description = "Nome da instancia"
 }
 
 variable "env" {
-  type = string
+  type        = string
   description = "Ambiente da instancia"
-  default = "dev"
+  default     = "dev"
 }

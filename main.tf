@@ -19,8 +19,8 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = var.name
-    Platform = data.aws_ami.ubuntu.platform_details
+    Name      = var.name
+    Platform  = data.aws_ami.ubuntu.platform_details
     Workspace = terraform.workspace
     Env       = var.env
   }
